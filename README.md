@@ -1,5 +1,7 @@
 # PrimeFactors (TDD 실습)
 
+## [TDD소개](https://github.com/cleancodeclass/prime-factors/wiki/TDD-%EC%86%8C%EA%B0%9C)
+
 ## PrimeFactors 실습 소개
 
 ### 소인수 분해란?
@@ -20,4 +22,15 @@
 * 14 -> [2,7]
 * 15 -> [3,5]
 
-### [TDD소개](https://github.com/cleancodeclass/prime-factors/wiki/TDD-%EC%86%8C%EA%B0%9C)
+
+## 실습방법
+1. 가장 쉽게 구현할 수 있는 테스트부터 시작한다.
+2. 실패하는 테스트 케이스를 만든다. (Red)
+3. 실패하는 테스트 케이스를 성공하도록 최소한의 소스를 수정한다. (Green)
+필요하다면 하드코딩 한다.
+4. 리팩토링이 필요하다면 수행한다. (Refactoring)
+  * 중복을 제거한다. 비슷한 중복을 완전한 중복으로 바꾼다.
+  * Extract method, Extract to local variable, Inline local variable….
+5. 새로운 실패하는 테스트 케이스를 만든다
+6. 1~5 반복을 통해 구체화되는 테스트케이스를 이용하여 일반화되는 소스코드를 작성한다.
+
