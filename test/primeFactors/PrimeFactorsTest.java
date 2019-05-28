@@ -78,6 +78,16 @@ public class PrimeFactorsTest {
 		assertEquals(Arrays.asList(2,2,2), factors);
 	}
 	
+	@Test
+	public void primeFactorTestOf12() {
+		
+		// when
+		List<Integer> factors = primeFactors.of(12);
+
+		// then
+		assertEquals(Arrays.asList(2,2,3), factors);
+	}
+	
 	
 
 }
