@@ -51,5 +51,12 @@ public class PrimeFactorsTest {
 		
 		assertEquals(Arrays.asList(2,3), factors);
 	}
+	
+	@Test
+	public void primefactor_of_8() {
+		List<Integer> factors = primeFactors.of(8);
+		
+		assertEquals(Arrays.asList(2,2,2), factors);
+	}
 
 }
