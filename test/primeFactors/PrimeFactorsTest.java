@@ -5,13 +5,20 @@ import static org.junit.Assert.assertEquals;
 import java.util.Arrays;
 import java.util.List;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class PrimeFactorsTest {
 
+	private PrimeFactors primeFactors;
+
+	@Before
+	public void setup() {
+		primeFactors = new PrimeFactors();
+	}
+	
 	@Test
 	public void primefactor_of_1() {
-		PrimeFactors primeFactors = new PrimeFactors();
 		List<Integer> factors = primeFactors.of(1);
 		
 		assertEquals(Arrays.asList(), factors);
@@ -19,7 +26,6 @@ public class PrimeFactorsTest {
 	
 	@Test
 	public void primefactor_of_2() {
-		PrimeFactors primeFactors = new PrimeFactors();
 		List<Integer> factors = primeFactors.of(2);
 		
 		assertEquals(Arrays.asList(2), factors);
