@@ -59,4 +59,11 @@ public class PrimeFactorsTest {
 		assertEquals(Arrays.asList(2,2,2), factors);
 	}
 
+	@Test
+	public void primefactor_of_9() {
+		List<Integer> factors = primeFactors.of(9);
+		
+		assertEquals(Arrays.asList(3,3), factors);
+	}
+
 }
