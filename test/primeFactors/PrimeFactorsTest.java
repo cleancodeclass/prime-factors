@@ -16,5 +16,13 @@ public class PrimeFactorsTest {
 		
 		assertEquals(Arrays.asList(), factors);
 	}
+	
+	@Test
+	public void primefactor_of_2() {
+		PrimeFactors primeFactors = new PrimeFactors();
+		List<Integer> factors = primeFactors.of(2);
+		
+		assertEquals(Arrays.asList(2), factors);
+	}
 
 }
