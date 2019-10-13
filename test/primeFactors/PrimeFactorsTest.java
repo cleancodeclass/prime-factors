@@ -45,4 +45,11 @@ public class PrimeFactorsTest {
 		assertEquals(Arrays.asList(2,2), factors);
 	}
 
+	@Test
+	public void primefactor_of_6() {
+		List<Integer> factors = primeFactors.of(6);
+		
+		assertEquals(Arrays.asList(2,3), factors);
+	}
+
 }
